@@ -2,6 +2,7 @@ package com.example.a0341scaffoldincompose.Scaffold
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
@@ -27,10 +28,16 @@ fun scaffold(){
                 innerPadding ->   Text(
             text = "Body content",
             modifier = Modifier
-                .padding(innerPadding)//.fillMaxSize().wrapContentSize()
+                .padding(innerPadding) //.fillMaxSize().wrapContentSize()
 
 
         )
+        },
+        floatingActionButton = {
+            FloatingActionButton(onClick = { /*TODO*/ }) {
+
+            }
         }
+
     )
 }
